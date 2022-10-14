@@ -41,7 +41,7 @@ export const ContactForm = () => {
       resetForm();
       return;
     }
-    dispatch(addContacts({ ...user, id: nanoid(5) }));
+    dispatch(addContacts(user));
     resetForm();
   };
 
